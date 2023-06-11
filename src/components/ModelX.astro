@@ -3,10 +3,10 @@ import Section from "./Section.astro";
 ---
 
 <Section
-  title="Model 3"
+  title="Model X"
   subtitle="Concertar una prueba de conducción"
   color="black"
-  id="model-3"
+  id="model-x"
 >
     <div 
         slot="footer" 
@@ -27,10 +27,10 @@ import Section from "./Section.astro";
         
     <img
         slot="background"
-        alt="Model 3"
+        alt="Model X"
         class="h-full w-full object-cover object-center bg-image"
-        src="model-3.avif"
-        id="bg-image-model3"
+        src="model-X.avif"
+        id="bg-image-modelx"
     />
 </Section>
 
@@ -46,11 +46,11 @@ import Section from "./Section.astro";
       }
     }
   
-    var imageElement = document.querySelector("#bg-image-model3") as HTMLImageElement;
+    var imageElement = document.querySelector("#bg-image-modelx") as HTMLImageElement;
   
     if (isEdge()) {
-      imageElement.src = "model-3.webp";
+      imageElement.src = "model-x.webp";
     } else {
-      imageElement.src = "model-3.avif";
+      imageElement.src = "model-x.avif";
     }
   </script>
